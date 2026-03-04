@@ -1,4 +1,4 @@
-@property --rotateY {
+@property --rotateDeg {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
@@ -6,8 +6,34 @@
 
 @keyframes turn {
     from {
-        --rotateY: 0deg;
+        --rotateDeg: 0deg;
+    } 50% {
+        --rotateDeg: 90deg;
     } to {
-        --rotateY: 90deg;
+        --rotateDeg: 90deg;
     }
 }
+/* 
+@keyframes turn2 {
+    from {
+        --rotateDeg: 0deg;
+    } 50% {
+        --rotateDeg: 0deg;
+    } to {
+        --rotateDeg: 90deg;
+    }
+} */
+
+/* @property --rotateY {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: false;
+}
+
+@keyframes rotateY {
+    from {
+        --rotateY: 0;   
+    } to {
+        --rotateY: 1;   
+    }
+} */

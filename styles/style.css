@@ -28,7 +28,7 @@ body > div > div {
     --depth: 100px; 
     --position: calc(100px + 10px);  
     --translate: translate(-50%, -50%);
-    --rotateY: 0deg;
+    --rotateDeg: 0deg; 
     height: var(--height);
     width: var(--width);
     position: absolute; 
@@ -36,40 +36,74 @@ body > div > div {
 }
 
 body > div > div:nth-of-type(1) {
-    transform: var(--translate) rotateY(var(--rotateY)) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
-    transition: 2s; 
+    --offset-x: -0.5;
+    --offset-y: -0.5;
+    --offset-z: 0.5; 
 }
 
 body > div > div:nth-of-type(2) {
-    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+    --offset-x: 0.5;
+    --offset-y: -0.5;
+    --offset-z: 0.5; 
 }
 
 body > div > div:nth-of-type(3) {
-    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+    --offset-x: -0.5;
+    --offset-y: -0.5;
+    --offset-z: -0.5; 
 }
 
 body > div > div:nth-of-type(4) {
-    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+    --offset-x: 0.5;
+    --offset-y: -0.5; 
+    --offset-z: -0.5; 
 }
 
 body > div > div:nth-of-type(5) {
-    transform:  var(--translate) translate3d(calc(-0.5 * var(--position)), calc(0.5 * var(--position)), calc(0.5 * var(--position)));
+    --offset-x: -0.5;
+    --offset-y: 0.5; 
+    --offset-z: 0.5; 
 }
 
 body > div > div:nth-of-type(6) {
-    transform:  var(--translate) translate3d(calc(0.5 * var(--position)), calc(0.5 * var(--position)), calc(0.5 * var(--position)));
+    --offset-x: 0.5;
+    --offset-y: 0.5; 
+    --offset-z: 0.5; 
 }
 
 body > div > div:nth-of-type(7) {
-    transform:  var(--translate) translate3d(calc(-0.5 * var(--position)), calc(0.5 * var(--position)), calc(-0.5 * var(--position)));
+    --offset-x: -0.5;
+    --offset-y: 0.5; 
+    --offset-z: -0.5; 
 }
 
 body > div > div:nth-of-type(8) {
-    transform:  var(--translate) translate3d(calc(0.5 * var(--position)), calc(0.5 * var(--position)), calc(-0.5 * var(--position)));
+    --offset-x: 0.5;
+    --offset-y: 0.5; 
+    --offset-z: -0.5; 
+}
+
+body > div > div:nth-child(n) {
+    --rotateX: 0; 
+    --rotateY: 0; 
+    --rotateZ: 0; 
+    transform: var(--translate) rotate3d(var(--rotateX), var(--rotateY), var(--rotateZ), var(--rotateDeg)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
 }
 
 body > div > div:nth-child(-n + 4) {
-    animation: turn 3s infinite; 
+    --rotateX: 0; 
+    --rotateY: 1; 
+    --rotateZ: 0; 
+    animation: turn 3s 1; 
+    animation-fill-mode: forwards;
+} 
+
+body > div > div:nth-of-type(1),  body > div > div:nth-of-type(2), body > div > div:nth-of-type(6), body > div > div:nth-of-type(8){
+    --rotateX: 1; 
+    --rotateY: 0; 
+    --rotateZ: 0; 
+    animation: turn 3s 1; 
+    animation-delay: 3s;
 } 
 
 div > div > div {
