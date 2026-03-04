@@ -16,37 +16,83 @@ body {
     margin: 0; 
 }
 
+body::after {
+    content: ""; 
+    height: 20px; 
+    width: 20px; 
+    background-color: hotpink; 
+    z-index: 5; 
+}
+
 body > div {
+    position: relative; 
+    transform-style: preserve-3d;
+}
+
+body > div > div {
     --height: 100px; 
     --width: 100px; 
     --depth: 100px; 
+    --rotation: rotateX(-25deg) rotateY(25deg);
+    --position: calc(100px + 10px);  
     height: var(--height);
     width: var(--width);
-    position: relative; 
-    transform: rotateX(25deg) rotateY(35deg); 
-    transform-style: preserve-3d; 
-}
-
-div > div {
     position: absolute; 
-    opacity: 0.5;
+    transform-style: preserve-3d;
 }
 
-div > div:nth-of-type(1) {
+body > div > div:nth-of-type(1) {
+    transform: var(--rotation) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(2) {
+    transform: var(--rotation) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(3) {
+    transform: var(--rotation) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(4) {
+    transform: var(--rotation) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(5) {
+    transform: var(--rotation) translate3d(calc(-0.5 * var(--position)), calc(0.5 * var(--position)), calc(0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(6) {
+    transform: var(--rotation) translate3d(calc(0.5 * var(--position)), calc(0.5 * var(--position)), calc(0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(7) {
+    transform: var(--rotation) translate3d(calc(-0.5 * var(--position)), calc(0.5 * var(--position)), calc(-0.5 * var(--position)));
+}
+
+body > div > div:nth-of-type(8) {
+    transform: var(--rotation) translate3d(calc(0.5 * var(--position)), calc(0.5 * var(--position)), calc(-0.5 * var(--position)));
+}
+
+div > div > div {
+    position: absolute; 
+    /* opacity: 0.5; */
+}
+
+div > div > div:nth-of-type(1) {
     height: var(--height); 
     width: var(--width); 
     transform: translate3d(0, 0, calc(var(--depth) * 0.5));
     background-color: var(--color-red); 
 }
 
-div > div:nth-of-type(2) {
+div > div > div:nth-of-type(2) {
     height: var(--height); 
     width: var(--width); 
     transform: translate3d(0, 0, calc(var(--depth) * -0.5));
     background-color: var(--color-orange); 
 }
 
-div > div:nth-of-type(3), div > div:nth-of-type(4) {
+div > div > div:nth-of-type(3), div > div > div:nth-of-type(4) {
     --orientation: 0.5; 
     height: var(--height); 
     width: var(--depth); 
@@ -56,22 +102,22 @@ div > div:nth-of-type(3), div > div:nth-of-type(4) {
     background-color: var(--color-blue); 
 }
 
-div > div:nth-of-type(4) {
+div > div > div:nth-of-type(4) {
     --orientation: -0.5; 
     background-color: var(--color-green); 
 }
 
-div > div:nth-of-type(5), div > div:nth-of-type(6) {
-    --rotation: 0.5;
+div > div > div:nth-of-type(5), div > div > div:nth-of-type(6) {
+    --ja: 0.5;
     height: var(--depth); 
     width: var(--width); 
     top: 50%; 
     left: 50%; 
-    transform: translate(-50%, -50%) rotateX(90deg) translate3d(0, 0, calc(var(--height) * var(--rotation)));
+    transform: translate(-50%, -50%) rotateX(90deg) translate3d(0, 0, calc(var(--height) * var(--ja)));
     background-color: var(--color-white); 
 }
 
-div > div:nth-of-type(6) {
-    --rotation: -0.5;
+div > div > div:nth-of-type(6) {
+    --ja: -0.5;
     background-color: var(--color-yellow); 
 }
