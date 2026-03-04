@@ -1,0 +1,13 @@
+@property --rotateY {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes turn {
+    from {
+        --rotateY: 0deg;
+    } to {
+        --rotateY: 90deg;
+    }
+}

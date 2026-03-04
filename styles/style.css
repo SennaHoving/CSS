@@ -16,14 +16,6 @@ body {
     margin: 0; 
 }
 
-body::after {
-    content: ""; 
-    height: 20px; 
-    width: 20px; 
-    background-color: hotpink; 
-    position: absolute
-}
-
 body > div {
     position: relative; 
     transform-style: preserve-3d;
@@ -34,29 +26,30 @@ body > div > div {
     --height: 100px; 
     --width: 100px; 
     --depth: 100px; 
-    /* --rotation: rotateX(-25deg) rotateY(25deg); */
     --position: calc(100px + 10px);  
+    --translate: translate(-50%, -50%);
+    --rotateY: 0deg;
     height: var(--height);
     width: var(--width);
     position: absolute; 
     transform-style: preserve-3d;
-    --translate: translate(-50%, -50%)
 }
 
 body > div > div:nth-of-type(1) {
-    transform: var(--translate) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+    transform: var(--translate) rotateY(var(--rotateY)) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+    transition: 2s; 
 }
 
 body > div > div:nth-of-type(2) {
-    transform:  var(--translate) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
+    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(0.5 * var(--position)));
 }
 
 body > div > div:nth-of-type(3) {
-    transform:  var(--translate) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(-0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
 }
 
 body > div > div:nth-of-type(4) {
-    transform:  var(--translate) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
+    transform:  var(--translate) rotateY(var(--rotateY)) translate3d(calc(0.5 * var(--position)), calc(-0.5 * var(--position)), calc(-0.5 * var(--position)));
 }
 
 body > div > div:nth-of-type(5) {
@@ -74,6 +67,10 @@ body > div > div:nth-of-type(7) {
 body > div > div:nth-of-type(8) {
     transform:  var(--translate) translate3d(calc(0.5 * var(--position)), calc(0.5 * var(--position)), calc(-0.5 * var(--position)));
 }
+
+body > div > div:nth-child(-n + 4) {
+    animation: turn 3s infinite; 
+} 
 
 div > div > div {
     position: absolute; 
