@@ -90,19 +90,17 @@ body > div > div:nth-child(n) {
     transform: var(--translate) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
 }
 
-body > div > div:nth-child(-n + 4) { 
-    animation: u 2s 1; 
-    animation-fill-mode: forwards;
+body > div > div:nth-of-type(3), body > div > div:nth-of-type(4) { 
+    animation: u 3s 1 forwards; 
 } 
 
-body > div:hover > :is(div:nth-of-type(1), div:nth-of-type(2)) {
-    animation: r1 3s 1; 
-    animation-fill-mode: forwards; 
+body > div > :is(div:nth-of-type(1), div:nth-of-type(2)) {
+    animation: u 3s forwards,  r1 3s forwards 3s; 
 }
 
-body > div:hover > :is(div:nth-of-type(6), div:nth-of-type(8)) {
-    animation: r2 3s 1; 
-    animation-fill-mode: forwards; 
+body > div > :is(div:nth-of-type(6), div:nth-of-type(8)) {
+    animation: r2 3s 1 forwards; 
+    animation-delay: 3s;
 }
 
 div > div > div {
