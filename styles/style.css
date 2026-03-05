@@ -84,19 +84,24 @@ body > div > div:nth-of-type(8) {
 }
 
 body > div > div:nth-child(n) {
-    --rotateX: 0; 
-    --rotateY: 0; 
-    --rotateZ: 0;
-    transform: var(--translate) rotate3d(var(--rotateX), var(--rotateY), var(--rotateZ), var(--rotateDeg)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
+    --rotateX: 0deg; 
+    --rotateY: 0deg; 
+    --rotateZ: 0deg; 
+    transform: var(--translate) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
 }
 
 body > div > div:nth-child(-n + 4) { 
-    animation: u 5s 1; 
+    animation: u 2s 1; 
     animation-fill-mode: forwards;
 } 
 
-body > div:hover > :is(div:nth-of-type(1), div:nth-of-type(2), div:nth-of-type(6), div:nth-of-type(8)) {
-    animation: r 3s 1; 
+body > div:hover > :is(div:nth-of-type(1), div:nth-of-type(2)) {
+    animation: r1 3s 1; 
+    animation-fill-mode: forwards; 
+}
+
+body > div:hover > :is(div:nth-of-type(6), div:nth-of-type(8)) {
+    animation: r2 3s 1; 
     animation-fill-mode: forwards; 
 }
 
