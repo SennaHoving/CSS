@@ -4,15 +4,34 @@
     inherits: false;
 }
 
-@keyframes turn {
+@keyframes u {
     from {
+        --rotateX: 0; 
+        --rotateY: 1; 
+        --rotateZ: 0;
         --rotateDeg: 0deg;
-    } 50% {
-        --rotateDeg: 90deg;
     } to {
+        --rotateX: 0; 
+        --rotateY: 1; 
+        --rotateZ: 0;
         --rotateDeg: 90deg;
     }
 }
+
+@keyframes r {
+    from {
+        --rotateX: 1; 
+        --rotateY: 0; 
+        --rotateZ: 0;
+        --rotateDeg: 0deg;
+    } to {
+        --rotateX: 1; 
+        --rotateY: 0; 
+        --rotateZ: 0;
+        --rotateDeg: 90deg;
+    }
+}
+
 /* 
 @keyframes turn2 {
     from {
