@@ -91,16 +91,15 @@ body > div > div:nth-child(n) {
 }
 
 body > div > div:nth-of-type(3), body > div > div:nth-of-type(4) { 
-    animation: u 3s 1 forwards; 
+    animation: u1 3s 1 forwards; 
 } 
 
 body > div > :is(div:nth-of-type(1), div:nth-of-type(2)) {
-    animation: u 3s forwards,  r1 3s forwards 3s; 
+    animation: m1 3s forwards;
 }
 
 body > div > :is(div:nth-of-type(6), div:nth-of-type(8)) {
-    animation: r2 3s 1 forwards; 
-    animation-delay: 3s;
+    animation: r1 3s 1 forwards;
 }
 
 div > div > div {
