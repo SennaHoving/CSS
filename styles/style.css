@@ -40,7 +40,6 @@ body > div > div:nth-of-type(1) {
     --offset-y: -0.5;
     --offset-z: 0.5; 
     animation: c1 20s forwards; 
-    opacity: 0;
 }
 
 body > div > div:nth-of-type(2) {
@@ -48,7 +47,6 @@ body > div > div:nth-of-type(2) {
     --offset-y: -0.5;
     --offset-z: 0.5; 
     animation: c2 20s forwards; 
-    opacity: 0;
 }
 
 body > div > div:nth-of-type(3) {
@@ -56,7 +54,6 @@ body > div > div:nth-of-type(3) {
     --offset-y: -0.5;
     --offset-z: -0.5; 
     animation: c3 20s forwards; 
-    opacity: 0;
 }
 
 body > div > div:nth-of-type(4) {
@@ -64,7 +61,6 @@ body > div > div:nth-of-type(4) {
     --offset-y: -0.5; 
     --offset-z: -0.5; 
     animation: c4 20s forwards; 
-    opacity: 0;
 }
 
 body > div > div:nth-of-type(5) {
@@ -96,7 +92,7 @@ body > div > div:nth-of-type(8) {
 }
 
 body > div > div:nth-child(n) {
-    transform: var(--translate) rotateX(var(--rotateX, 0deg)) rotateY(var(--rotateY, 0deg)) rotateZ(var(--rotateZ, 0deg)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
+    transform: var(--translate) rotateX(var(--rotateX, 0deg)) rotateY(var(--rotateY, 0deg)) rotateZ(var(--rotateZ, 0deg)) rotateX(var(--rotateX2, 0deg)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
 }
 
 /* body > div > div:nth-of-type(3), body > div > div:nth-of-type(4) { 

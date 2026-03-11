@@ -18,27 +18,29 @@
 
 @keyframes c1 {
   0% {
-    --rotateY: 0deg; 
   }
   8.333% {
-    --rotateY: 90deg; 
-    --rotateX: 0deg;
+    --rotateY: 0deg;
   }
   16.666% {
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
     --rotateZ: 0deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
   }
   25% {
-    --rotateZ: 90deg;
-    --rotateY: 0deg; 
+    --rotateZ: 0deg;
+    --rotateY: -90deg; 
     --rotateX: 0deg;
   }
   33.333% {
-    
+    --rotateZ: 90deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
   }
   41.666% {
-   
+    --rotateZ: 90deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
   }
   50% {
 
@@ -65,25 +67,31 @@
 
 @keyframes c2 {
   0% {
-    --rotateY: 0deg; 
-  }
-  8.333% {
-    --rotateY: 90deg; 
     --rotateX: 0deg;
   }
+  8.333% {
+    --rotateZ: 0deg;
+    --rotateX: 90deg;
+  }
   16.666% {
-    --rotateY: 90deg; 
+    --rotateZ: 90deg;
+    --rotateY: 0deg; 
     --rotateX: 90deg;
   }
   25% {
+    --rotateZ: 90deg;
     --rotateY: 90deg; 
     --rotateX: 90deg;
   }
   33.333% {
-    
+    --rotateZ: 90deg;
+    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   41.666% {
-   
+    --rotateZ: 90deg;
+    --rotateY: 90deg; 
+    --rotateX: 0deg;
   }
   50% {
 
@@ -110,22 +118,30 @@
 
 @keyframes c3 {
   0% {
-    --rotateY: 0deg; 
+    --rotateX: 0deg;
   }
   8.333% {
-    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   16.666% {
-    --rotateY: 90deg; 
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   25% {
+    --rotateZ: 0deg;
     --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   33.333% {
-    
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   41.666% {
-   
+    --rotateZ: -90deg;
+    --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   50% {
 
@@ -152,22 +168,29 @@
 
 @keyframes c4 {
   0% {
-    --rotateY: 0deg; 
   }
   8.333% {
-    --rotateY: 90deg; 
-  }
-  16.666% {
-    --rotateY: 90deg; 
-  }
-  25% {
     --rotateY: 0deg; 
   }
+  16.666% {
+    --rotateZ: 0deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
+  }
+  25% {
+    --rotateZ: 0deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
+  }
   33.333% {
-    
+    --rotateZ: 0deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
   }
   41.666% {
-   
+    --rotateZ: 0deg;
+    --rotateY: -90deg; 
+    --rotateX: 0deg;
   }
   50% {
 
@@ -198,15 +221,24 @@
   8.333% {
   }
   16.666% {
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: 0deg;
   }
   25% {
+    --rotateZ: 90deg;
     --rotateY: 0deg; 
+    --rotateX: 0deg;
   }
   33.333% {
-    
+    --rotateZ: 90deg;
+    --rotateY: 0deg; 
+    --rotateX: -90deg;
   }
   41.666% {
-   
+    --rotateZ: 180deg;
+    --rotateY: 0deg; 
+    --rotateX: -90deg;
   }
   50% {
 
@@ -233,26 +265,31 @@
 
 @keyframes c6 {
   0% {
-  }
-  8.333% {
-    --rotateY: 0deg; 
     --rotateX: 0deg;
   }
+  8.333% {
+    --rotateZ: 0deg;
+    --rotateX: 90deg;
+  }
   16.666% {
+    --rotateZ: 90deg;
     --rotateY: 0deg; 
     --rotateX: 90deg;
-    --rotateZ: 0deg; 
   }
   25% {
-    --rotateY: 0deg; 
+    --rotateZ: 90deg;
+    --rotateY: 90deg; 
     --rotateX: 90deg;
-    --rotateZ: 90deg; 
   }
   33.333% {
-    
+    --rotateZ: 90deg;
+    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   41.666% {
-   
+    --rotateZ: 90deg;
+    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   50% {
 
@@ -279,19 +316,33 @@
 
 @keyframes c7 {
   0% {
+    --rotateX: 0deg;
   }
   8.333% {
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   16.666% {
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: 90deg;
   }
   25% {
-    --rotateY: 0deg; 
+    --rotateZ: 0deg;
+    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   33.333% {
-    
+    --rotateZ: -90deg;
+    --rotateY: 90deg; 
+    --rotateX: 90deg;
   }
   41.666% {
-   
+    --rotateZ: -90deg;
+    --rotateX: 90deg;
+    --rotateY: 90deg; 
+    --rotateX2: 90deg;
   }
   50% {
 
@@ -320,21 +371,23 @@
   0% {
   }
   8.333% {
-    --rotateX: 0deg;
   }
   16.666% {
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
   }
   25% {
+    --rotateZ: 0deg;
     --rotateY: 0deg; 
-    --rotateX: 90deg;
+    --rotateX: 0deg;
   }
   33.333% {
-    
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: -90deg;
   }
   41.666% {
-   
+    --rotateZ: 0deg;
+    --rotateY: 0deg; 
+    --rotateX: -90deg;
   }
   50% {
 
