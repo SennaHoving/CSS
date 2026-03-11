@@ -39,54 +39,56 @@ body > div > div:nth-of-type(1) {
     --offset-x: -0.5;
     --offset-y: -0.5;
     --offset-z: 0.5; 
-    animation: c1 5s forwards; 
+    animation: c1 20s forwards; 
 }
 
 body > div > div:nth-of-type(2) {
     --offset-x: 0.5;
     --offset-y: -0.5;
     --offset-z: 0.5; 
-    animation: c2 5s forwards; 
+    animation: c2 20s forwards; 
 }
 
 body > div > div:nth-of-type(3) {
     --offset-x: -0.5;
     --offset-y: -0.5;
     --offset-z: -0.5; 
-    animation: c3 5s forwards; 
+    animation: c3 20s forwards; 
 }
 
 body > div > div:nth-of-type(4) {
     --offset-x: 0.5;
     --offset-y: -0.5; 
     --offset-z: -0.5; 
-    animation: c4 5s forwards; 
+    animation: c4 20s forwards; 
 }
 
 body > div > div:nth-of-type(5) {
     --offset-x: -0.5;
     --offset-y: 0.5; 
     --offset-z: 0.5; 
+    animation: c5 20s forwards;
 }
 
 body > div > div:nth-of-type(6) {
     --offset-x: 0.5;
     --offset-y: 0.5; 
     --offset-z: 0.5; 
-    animation: c6 5s forwards; 
+    animation: c6 20s forwards; 
 }
 
 body > div > div:nth-of-type(7) {
     --offset-x: -0.5;
     --offset-y: 0.5; 
     --offset-z: -0.5; 
+    animation: c7 20s forwards;
 }
 
 body > div > div:nth-of-type(8) {
     --offset-x: 0.5;
     --offset-y: 0.5; 
     --offset-z: -0.5; 
-    animation: c8 5s forwards; 
+    animation: c8 20s forwards; 
 }
 
 body > div > div:nth-child(n) {
