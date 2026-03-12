@@ -18,397 +18,337 @@
 
 @keyframes c1 {
   0% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateY: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 90deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 90deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c2 {
   0% {
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateZ: 0deg;
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 90deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) rotateY(-90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) rotateY(-90deg) rotateZ(-90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c3 {
   0% {
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: -90deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(-90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(-90deg) rotateX(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
-  100% {
-   
+  100% {    
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c4 {
   0% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateY: 0deg; 
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 0deg;
-    --rotateY: -90deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) rotateX(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+    transform: var(--translate) rotateX(0deg) rotateY(-90deg) rotateZ(0deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) rotateX(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c5 {
   0% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 90deg;
-    --rotateY: 0deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 90deg;
-    --rotateY: 0deg; 
-    --rotateX: -90deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 180deg;
-    --rotateY: 0deg; 
-    --rotateX: -90deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(180deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(180deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(180deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c6 {
   0% {
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateZ: 0deg;
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 90deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c7 {
   0% {
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 0deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: -90deg;
-    --rotateY: 90deg; 
-    --rotateX: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(-90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: -90deg;
-    --rotateX: 90deg;
-    --rotateY: 90deg; 
-    --rotateX2: 90deg;
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(-90deg) rotateY(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(-90deg) rotateY(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(-90deg) rotateY(90deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(-90deg) rotateY(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
-  }
+    transform: var(--translate) rotateX(90deg) rotateY(90deg) rotateZ(0deg) rotateY(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
+  } 
   83.333% {
-   
+   transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) rotateY(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(90deg) rotateY(0deg) rotateZ(0deg) rotateY(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
 @keyframes c8 {
   0% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   8.333% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   16.666% {
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   25% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: 0deg;
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   33.333% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: -90deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   41.666% {
-    --rotateZ: 0deg;
-    --rotateY: 0deg; 
-    --rotateX: -90deg;
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   50% {
-
+    transform: var(--translate) rotateX(-90deg) rotateY(-90deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   58.333% {
- 
+    transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   66.666% {
-   
+   transform: var(--translate) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   75% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   83.333% {
-   
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   91.666% {
-  
+    transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
   100% {
-   
+   transform: var(--translate) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
   }
 }
 
