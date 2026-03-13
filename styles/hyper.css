@@ -39,11 +39,11 @@ body div > div > div {
 body > div > div > div::before {
     content: ""; 
     display: block; 
-    width: 50cqw;
-    height: 50cqh;
+    width: 30cqw;
+    height: 30cqh;
     border: 5px red solid;
     position: absolute;
-    --position: -30px; 
+    --position: -50px; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%) translateZ(var(--position)); 
@@ -51,7 +51,7 @@ body > div > div > div::before {
 }
 
 body > div > div > div:is(:nth-of-type(2), :nth-of-type(4), :nth-of-type(6))::before {
-    --position: 30px; 
+    --position: 50px; 
 }
 
 @property --position {

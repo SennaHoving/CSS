@@ -22,10 +22,67 @@ body a {
     left: 1em;
 }
 
+body form {
+    position: absolute; 
+    top: 3em; 
+    left: 1em;
+}
+
 body > div {
     position: relative; 
     transform-style: preserve-3d;
     transform: rotateX(-25deg) rotateY(25deg);
+    container-type: style;
+    --theme: base;
+}
+
+body form:has(label:nth-of-type(1) > input:checked) + div   {
+    --theme: base;
+}
+
+body form:has(label:nth-of-type(2) > input:checked) + div  {
+    --theme: hyper;
+}
+
+@container style(--theme: base) {
+}
+
+@container style(--theme: hyper) {
+    body > div > div > div:nth-child(n) {
+        background-color: transparent; 
+    }
+
+    body > div > div > div::before {
+        content: ""; 
+        display: block; 
+        width: 0cqw;
+        height: 0cqh;
+        border: 5px red solid;
+        position: absolute;
+        --position: -45px; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%) translateZ(var(--position)); 
+        animation: hyper 5s infinite linear; 
+    }
+
+    body > div > div > div:is(:nth-of-type(2), :nth-of-type(4), :nth-of-type(6))::before {
+        --position: 45px; 
+    }
+}
+
+@property --position {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: false;
+}
+
+@keyframes hyper {
+    to {
+        --position: 0px; 
+        width: 100cqw; 
+        height: 100cqh; 
+    }
 }
 
 body > div > div {
@@ -123,8 +180,13 @@ body > div > :is(div:nth-of-type(6), div:nth-of-type(8)) {
 
 div > div > div {
     position: absolute; 
-    /* opacity: 0.5; */
+    container-type: size; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
 }
+
 
 div > div > div:nth-of-type(1) {
     height: var(--height); 
