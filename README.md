@@ -107,6 +107,7 @@ geleerd dat je dus dubbel kan roteren in een tranform / translate3D, en dat keyf
 Ik ben vandaag tot de 8ste draai gekomen, dus morgen de resteren daarien maken en daarnaa kijken naar een effect om toe te voegen aan de kubus. 
 
 ### 12/03 
+Checkout met Nienke
 Vandaag heb ik de animatie loop afgerond. In de ochtend kwam de container queries naar boven, wat mij op het idee bracht op een soort hyper cube te maken. 
 
 Kickoff over css wiskunde, vervolgens de rest van de ochtend de animatie afgerond. En daarna de rest van de middag ingelezen over container queries en container style queries, en daar begonnen met het maken van de hypercube eerst in een enkele apparte kubus. 
@@ -188,11 +189,14 @@ Verder kwam hierbij nog uit dat de titel nog belangrijks was, en interactie toe 
 
 ## Week 4
 ### 18/03
-Vandaag ben ik begonnen met het toevoegen van de titel, waarbij het idee was om de letters random te laten draaien. Alleen omdat je random niet kan gebruiken binnen animaties, en alleen op safari werkt moest dit ook met keyframes, en dan so random mogelijk. 
+Checkout met Nienke
+Vandaag ben ik begonnen met het toevoegen van de titel, waarbij het idee was om de letters random te laten draaien. Alleen omdat je random niet kan gebruiken binnen animaties, en alleen op safari werkt moest dit ook met keyframes, en dan so random mogelijk.
 
 Begonnen met het toevoegen van de titel, hier de ochtend mee bezig geweest. Verder de rest van de middag bezig geweest met de readme. 
 
-Geleerd 
+Geleerd over random, uiteindelijk niet gebruikt. Verder niet heel veel nieuwe dingen vandaag. 
+
+En morgen eindgesprek. 
 
 Huide kubus nu: 
 ![Huidige kubus](/screenshots/week4-base.png)
@@ -201,7 +205,7 @@ Met de hyper layout:
 ![Hyper kubus](/screenshots/week4-hyper.png)
 
 ### Reflectie 
-
+Het enige dat echt nog niet is gelukt is de soort 'squeez' in de 6de en 7de rotate eruit te halen. Bij deze draai stack ik de rotates en draait die niet meer over de center maar komt die wel op de juist plaats. Dus in de tijd ben ik hier niet achter gekomen, had ik met meer tijd nog willen fixed. 
 
 ## Bronnen
 https://robertcelt95.medium.com/responsive-typography-that-actually-works-beyond-font-size-clamp-acf592b79774
