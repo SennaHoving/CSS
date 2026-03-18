@@ -208,4 +208,10 @@ Met de hyper layout:
 Het enige dat echt nog niet is gelukt is de soort 'squeez' in de 6de en 7de rotate eruit te halen. Bij deze draai stack ik de rotates en draait die niet meer over de center maar komt die wel op de juist plaats. Dus in de tijd ben ik hier niet achter gekomen, had ik met meer tijd nog willen fixed. 
 
 ## Bronnen
+https://css-tricks.com/almanac/rules/k/keyframes/
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property
+https://css-tricks.com/css-in-3d-learning-to-think-in-cubes-instead-of-boxes/
+https://codepen.io/h20x/pen/YQYrOa
+https://stackoverflow.com/questions/4359627/stopping-a-css3-animation-on-last-frame
 https://robertcelt95.medium.com/responsive-typography-that-actually-works-beyond-font-size-clamp-acf592b79774
+https://chatgpt.com/share/69ba8145-af1c-800a-ac1b-6ccb9e8ceeff 
