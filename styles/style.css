@@ -36,6 +36,20 @@ body > div {
     --theme: base;
 }
 
+body form:has(div:nth-of-type(2) input:checked) + div {
+    animation: spin 10s infinite linear; 
+}
+
+@keyframes spin {
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+body:has(label:nth-of-type(2) > input:checked) {
+    background-color: black; 
+}
+
 body form:has(label:nth-of-type(1) > input:checked) + div   {
     --theme: base;
 }
@@ -48,6 +62,10 @@ body form:has(label:nth-of-type(2) > input:checked) + div  {
 }
 
 @container style(--theme: hyper) {
+    body {
+        background-color: black;
+    }
+
     body > div > div > div:nth-child(n) {
         background-color: transparent; 
     }
