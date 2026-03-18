@@ -89,6 +89,9 @@ body > div > div:nth-child(n) {
 }
 ```
 
+Screenshot kubus derde draai: 
+![kubus derde draai](/screenshots/week2.png)
+
 Verder is het is het voor nu niet heel anders om nog meer draaien uit te werken, en is het misschien nuttiger / leuker om te kijken naar verschillende manieren om de kubus te stylen (hypno voorbeeld). En verder is het ook nog goed om te kijken naar de overall criteria.  
 
 
@@ -175,6 +178,12 @@ body > div > div {
 }
 ```
 
+Kubus met algoritme: 
+![kubus met algoritme](/screenshots/week3-base.png)
+
+Enekele kubus met hyper cube concept: 
+![Enkele hyper kubus](/screenshots/week3-hyper.png)
+
 Verder kwam hierbij nog uit dat de titel nog belangrijks was, en interactie toe te voegen.  
 
 ## Week 4
@@ -185,7 +194,11 @@ Begonnen met het toevoegen van de titel, hier de ochtend mee bezig geweest. Verd
 
 Geleerd 
 
+Huide kubus nu: 
+![Huidige kubus](/screenshots/week4-base.png)
 
+Met de hyper layout: 
+![Hyper kubus](/screenshots/week4-hyper.png)
 
 ### Reflectie 
 
