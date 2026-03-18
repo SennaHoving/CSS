@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto&display=swap');
+
 :root {
     --color-red: #B90000; 
     --color-orange: #FF5900;
@@ -5,6 +8,7 @@
     --color-yellow: #FFD500; 
     --color-blue: #0045AD; 
     --color-green: #009B48; 
+    --primary: #000; 
 }
 
 body {
@@ -16,16 +20,62 @@ body {
     margin: 0; 
 }
 
-body a {
-    position: absolute; 
-    top: 1em; 
-    left: 1em;
+body h1 {
+    font-family: 'Micro 5';
+    font-size: clamp(4em, 20vw, 8em);
+    margin: 0; 
+    color: var(--primary); 
+    display: flex; 
+    gap: 0.2em;
+
+    span {
+        transform-origin: center;
+
+        &:nth-of-type(1) {
+            animation: rotate1 30s infinite;
+        }
+
+        &:nth-of-type(2) { 
+            animation: rotate2 30s infinite;
+        }
+
+        &:nth-of-type(3) {
+            animation: rotate3 30s infinite; 
+        }
+
+        &:nth-of-type(4) { 
+            animation: rotate4 30s infinite;
+        }
+
+        &:nth-of-type(5) { 
+            animation: rotate5 30s infinite;
+        }
+    }
 }
 
 body form {
     position: absolute; 
     top: 3em; 
-    left: 1em;
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5em;
+
+    div {
+        display: flex; 
+        flex-direction: row; 
+        gap: 0.5em;
+    }
+}
+
+body form div label {
+    font-family: 'roboto';
+    border: 1px var(--primary) solid;  
+    padding: 0.5em 1em; 
+    color: var(--primary); 
+
+    input {
+        display: none;
+    }
 }
 
 body > div {
@@ -48,6 +98,7 @@ body form:has(div:nth-of-type(2) input:checked) + div {
 
 body:has(label:nth-of-type(2) > input:checked) {
     background-color: black; 
+    --primary: #fff; 
 }
 
 body form:has(label:nth-of-type(1) > input:checked) + div   {
@@ -179,22 +230,6 @@ body > div > div:nth-of-type(8) {
     animation: c8 15s infinite; 
     opacity: 1  ;
 }
-
-/* body > div > div:nth-child(n) {
-    transform: var(--translate) rotateX(var(--rotateX, 0deg)) rotateY(var(--rotateY, 0deg)) rotateZ(var(--rotateZ, 0deg)) rotateX(var(--rotateX2, 0deg)) translate3d(calc(var(--offset-x) * var(--position)), calc(var(--offset-y) * var(--position)), calc(var(--offset-z) * var(--position)));
-} */
-
-/* body > div > div:nth-of-type(3), body > div > div:nth-of-type(4) { 
-    animation: u1 3s 1 forwards; 
-} 
-
-body > div > :is(div:nth-of-type(1), div:nth-of-type(2)) {
-    animation: m1 3s forwards;
-}
-
-body > div > :is(div:nth-of-type(6), div:nth-of-type(8)) {
-    animation: r1 3s 1 forwards;
-} */
 
 div > div > div {
     position: absolute; 
