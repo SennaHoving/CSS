@@ -208,6 +208,7 @@ Met de hyper layout:
 Voor het uiteindelijk resultaat ben ik best tevreden, vooral aan het begin had ik geen idee hoe ik dit tot werking kon maken en het wel gelukt. Ik denk dat ik toen ik eenmaal beginnen was, wat bronnen had gelezen over transform en perspective dat het in elkaar zetten een enkele kubus erg mee viel. En daarna het draaien van de rubiks viel in het begin wel mee, maar toe ik eenmaal in de derde week was begonnen met het uitwerken van het algoritme, waarvoor ik alle apparte kubussen los animerde was het toch wel uitdagend en anders denken om de draaien te laten werken. 
 
 Met het uiteindelijk resultaat ben ik denk het meest trots op de uiteindelijke keyframes. Dit was toch wel even puzzelen om goed te laten werken, maar is uiteindelijk goed gelukt: 
+![Resultaat kubus](/screenshots/fnal.png)
 ```
 @keyframes c2 {
     ...
@@ -225,6 +226,7 @@ Met het uiteindelijk resultaat ben ik denk het meest trots op de uiteindelijke k
 ```
 
 En ik ben ook trots op de styling van het hyper effect, ik denk dat dat uiteindelijk ook een goed gelukt experiment is geworden. Het is misschien niet de meest complexe code geweest, maar creeërde dat wel het effect waar ik een beetje naar opzoek was: 
+![Resultaat hyper kubus](/screenshots/fnal-hyper.png)
 ```
     body > div > div > div::before {
         content: ""; 
